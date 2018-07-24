@@ -31,7 +31,7 @@ Depois:
 php artisan key:generate
 </pre>
 
-
+<p>Conforme o escopo do projeto, crie um banco de dados chamado <b>api</b></p>
 <p>Altere o arquivo .env do seu projeto, mudando as configuraçoes em negrito de acordo com seu banco de dados</p>
 
 
@@ -39,7 +39,7 @@ php artisan key:generate
     DB_CONNECTION=mysql
      DB_HOST=<b>host</b>
      DB_PORT=3306
-     DB_DATABASE=<b>database</b>
+     DB_DATABASE=<b>api</b> (ou o nome que desejar)
      DB_USERNAME=<b>usersname</b>
      DB_PASSWORD=<b>password</b>
      </pre>
@@ -54,19 +54,11 @@ e Rode seu projeto
 php artisan serve
 </pre>
 
-## Testes API
-
-via Postman
-<pre>
-
-<a href=https://www.getpostman.com/collections/d9105dc12b4e76c32451">https://documenter.getpostman.com/collection/view/3434102-a1c14ab5-4486-c023-f5ee-87744b931c72</a>
-
-</pre>
 
 ## Comentários sobre o projeto
 
 Prezados, 
-Para acessar o projeto, utilize o <b>suaurl</b>/api/user.<br>
+Para acessar o projeto, utilize o <b>suaurl</b>/api/users.<br>
 Segui o padrão do próprio laravel nas rotas utilizando o resource, a api segue o padrão rest com os códigos de HTTP e apliquei o repository pattern para o projeto.
 <br>
 A listagem de usuário está com paginação de 10 itens por página, para acessar outras páginas, inserir paramentro ?page=X
