@@ -4,7 +4,7 @@ Utilizado Laravel 5.4<br>
 MYSQL
 
 # Requisitos necessários
--PHP >= 7.0.0
+-PHP >= 7.1.0
 
 -OpenSSL PHP Extension
 
