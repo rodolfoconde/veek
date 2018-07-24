@@ -25,7 +25,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return response()->json(['data' => $this->model->all(), 'message'=>'Registros carregados com sucesso'], 200);
+        return response()->json(['data' => $this->model->paginate(), 'message'=>'Registros carregados com sucesso'], 200);
     }
 
 

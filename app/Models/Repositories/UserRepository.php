@@ -18,4 +18,10 @@ class UserRepository extends AbstractRepository
     {
         $this->model = $model;
     }
+
+    public function paginate($limit = 10)
+    {
+        return parent::paginate($limit);
+    }
+
 }

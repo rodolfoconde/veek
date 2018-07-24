@@ -68,10 +68,12 @@ via Postman
 Prezados, 
 Para acessar o projeto, utilize o <b>suaurl</b>/api/user.<br>
 Segui o padrão do próprio laravel nas rotas utilizando o resource, a api segue o padrão rest com os códigos de HTTP e apliquei o repository pattern para o projeto.
-
+<br>
+A listagem de usuário está com paginação de 10 itens por página, para acessar outras páginas, inserir paramentro ?page=X
 <br><br>
 
 Listar todos os usuários = [GET] /api/users<br>
+Listar todos os usuários, demais páginas = [GET] /api/users?page=XX<br>
 Exibir um usuário        = [GET] /api/users/{id}<br>
 Criar usuário            = [POST] /api/users<br>
 Editar usuário           = [PUT] /api/users<br>
